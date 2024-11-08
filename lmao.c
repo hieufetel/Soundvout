@@ -42,3 +42,13 @@ double calculateExpression(int n) {
     }
     return result;
 }
+
+// Function to calculate the value of the given expression derivative of the given expression
+double calculateExpressionDerivative(int n) {
+    double result = 0;
+    for (int i = 0; i <= n; i++) {
+        double term = i * pow(2, i) * sumOfSeries(i);
+        result += term;
+    }
+    return result;
+}
