@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test2</title>
+</head>
+<body>
+    <h1>test thu xem</h1>
+    <div id="myDiv">
+        <p id="myParagraph">This is a paragraph.</p>
+        <button onclick="changeText()">Change Text</button>
+    </div>
+    <script>
+        let count = 0;
+        function changeText() {
+            count++;
+            let paragraph = document.getElementById('myParagraph');
+            paragraph.innerHTML = `This is a paragraph. Clicked ${count} times.`;
+        }
+    </script>
+    
+</body>
+</html>
