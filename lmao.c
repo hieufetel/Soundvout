@@ -31,3 +31,14 @@ double sumOfSeries(int n) {
     }
     return sum;
 }
+
+
+// Function to calculate the value of the given expression
+double calculateExpression(int n) {
+    double result = 0;
+    for (int i = 0; i <= n; i++) {
+        double term = pow(2, i) * sumOfSeries(i);
+        result += term;
+    }
+    return result;
+}
